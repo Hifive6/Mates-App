@@ -3,11 +3,56 @@ const Schema = mongoose.Schema
 const passportLocalMongoose = require("passport-local-mongoose")
 
 profileSchema = new Schema ({
-    user: { type: String, required: true},
-    password: { type: String, required: true},
-    tenantsofrms: {type: []},
-    adminofrms: {type: []},
-
+    user: { 
+            type: String, 
+            required: true,
+            validate: [
+                function(input){
+                    return input.length >= 10;
+                }
+            ]
+    },
+    password: { 
+                type: String, 
+                required: true,
+                validate: [
+                    function(input){
+                        return input.length >= 10;
+                    }
+                ]
+            },
+    firstName: {
+            type: String,
+            required: true,
+            validate: [
+                function(input){
+                    return input.length >= 10;
+                }
+            ],
+    },
+    lastName: {
+            type: String,
+            required: true,
+            validate: [
+                function(input){
+                    return input.length >= 10;
+                }
+            ],
+    },
+    phoneNumber: {
+        type: Number,
+        required: true,
+    },
+    email: {
+        type: String,
+        match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
+    },
+    tenantsOfRooms: {
+                type: Array
+    },
+    adminsOfRooms: {
+                type: Array
+            },
 });
 
 const Profile = mongoose.model("Profile", profileSchema);
