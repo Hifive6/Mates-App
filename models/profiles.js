@@ -39,9 +39,24 @@ profileSchema = new Schema ({
                 }
             ],
     },
+    emergencyContact:{
+            type: String,
+            required: true,
+            validate: [
+                function(input){
+                    return input.length >= 10;
+                }
+            ],
+    },
     phoneNumber: {
         type: Number,
+        unique: true,
         required: true,
+        validate: [
+                function(input){
+                    return input.length >= 10;
+                }
+            ],
     },
     email: {
         type: String,
