@@ -21,6 +21,15 @@ roomSchema = new Schema ({
             }
         ]
     },
+    messagesForRoom: {
+        type: mongoose.Schema.Types.ObjectId,
+        require: true,
+        validate: [
+            function(input){
+                return input.length >= 10;
+            }
+        ]
+    },
     tenants: {
         type: Array,
     }
