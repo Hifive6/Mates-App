@@ -5,6 +5,7 @@ import Messageboard from './components/dumb-components/messagebox/messageboard'
 import loginbox from './components/dumb-components/loginbox/loginbox'
 import Signupbox from './components/dumb-components/signupbox/signupbox'
 import './App.css';
+import Profilebox from './components/dumb-components/profileform/Profilebox'
 
 import {
   Carousel,
@@ -47,7 +48,7 @@ class App extends Component {
        
 
       
-      <Loginbox />
+      <Profilebox />
 
 
         </div>
