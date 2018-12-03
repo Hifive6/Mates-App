@@ -27,30 +27,25 @@ import myOwnNavbar from './components/dumb-components/navbar/navbar';
 
 import Carousel1 from './components/dumb-components/carousel1/carousel1';
 
-const App = () => (
-  <div>
-    <Login />
-    
-  </div>
-);
 
-// class App extends Component {
-//   constructor(props) {
-//     super(props);
 
-//     this.toggle = this.toggle.bind(this);
-//     this.state = {
-//       isOpen: false
-//     };
-//   }
-//   toggle() {
-//     this.setState({
-//       isOpen: !this.state.isOpen
-//     });
-//   }
-//   render() {
-//     return (
-//       <div>
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
        
 
       
