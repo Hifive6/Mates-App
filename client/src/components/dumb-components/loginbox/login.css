@@ -1,0 +1,42 @@
+
+#login {
+    display: flex;
+    justify-content: center;
+    opacity: .9;
+    padding-right: 85px;
+    width: 390px;
+    box-shadow: .5em;
+    margin-top: 30px;
+    padding-bottom: 200px;
+   
+}
+h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 120px;
+    color: yellow;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-style: italic;
+    font-weight: 800;
+    position: absolute; 
+    left: 0; 
+    width: 100%;   
+}
+
+body, html {
+    height: 100%;
+    
+    
+  }
+.background { 
+    background-image: url("../loginbox/front.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: stretch; 
+    margin-top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
