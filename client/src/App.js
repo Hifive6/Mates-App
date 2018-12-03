@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import MyOwnNavbar from './components/dumb-components/navbar/navbar'
+import Jumbotronjs from './components/dumb-components/Jumbotron/jumbotron'
+import Messageboard from './components/dumb-components/messagebox/messageboard'
+import loginbox from './components/dumb-components/loginbox/loginbox'
+import Signupbox from './components/dumb-components/signupbox/signupbox'
 import './App.css';
+import Profilebox from './components/dumb-components/profileform/Profilebox'
+
 import {
+  Carousel,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -15,7 +22,10 @@ import {
   Jumbotron,
   Button
 } from 'reactstrap';
-import MyOwnNavbar from './components/navbar'
+import Loginbox from './components/dumb-components/loginbox/loginbox';
+import myOwnNavbar from './components/dumb-components/navbar/navbar';
+
+import Carousel1 from './components/dumb-components/carousel1/carousel1';
 
 
 class App extends Component {
@@ -37,74 +47,15 @@ class App extends Component {
       <div>
        
 
-        <nav className="nav-extended">
-          <div className="nav-wrapper">
-             <h1 className="brand-logo">Mates</h1>
-            
-           
-          </div>
-          <div className="nav-content">
-            <ul className="tabs tabs-transparent">
-              <li className="tab"><a href="#test1">Home</a></li>
-              <li className="tab"><a className="active" href="#test2">Bills</a></li>
-              <li className="tab"><a href="#test3">Chores</a></li>
-              <li className="tab"><a href="#test4">Profile</a></li>
-            </ul>
-          </div>
-        </nav>
+      
+      <Profilebox />
+
+
+        </div>
+
+        
 
      
-
-
-
-
-
-        <div id="test1" className="col s12">
-        
-        <div id="jumbotron" className="jumbotron jumbotron-fluid">
-          <div className="container">
-            <h1 className="display-2 text-center">Mates</h1>
-            <p className="lead text-center">This is a web application that lets you keep track of your shady ass room-mates trying to skip out on paying rent.</p>
-            <MyOwnNavbar />
-          </div>
-        </div>
-
-
-        <div className="container">
-          <div className="pre-scrollable shadow-lg p-3 mb-5 bg-white rounded">
-            <h1>your --Message here</h1></div>
-
-
-
-
-          <form>
-
-            <div className="form-group">
-              <label htmlFor="exampleFormControlTextarea1"></label>
-              <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type a Message Here..." rows="3"></textarea>
-              <button className="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i className="material-icons right">send</i>
-              </button>
-            </div>
-          </form>
-
-        </div>
-
-        </div>
-
-
-
-
-        <div id="test2" className="col s12">Test 2</div>
-        <div id="test3" className="col s12">Test 3</div>
-        <div id="test4" className="col s12">Test 4</div>
-
-
-
-
-        
-
-      </div>
     );
   }
 }
