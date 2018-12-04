@@ -6,6 +6,7 @@ import loginbox from './components/dumb-components/loginbox/loginbox'
 import Signupbox from './components/dumb-components/signupbox/signupbox'
 import './App.css';
 import Profilebox from './components/dumb-components/profileform/Profilebox'
+import Creatroompage from './components/dumb-components/creatroompage/createroompage'
 
 import {
   Carousel,
@@ -48,7 +49,7 @@ class App extends Component {
        
 
       
-      <Profilebox />
+     <Creatroompage />
 
 
         </div>
