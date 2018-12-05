@@ -15,21 +15,21 @@ export default class Signupbox extends Component {
         <div className="form-group">
             <label for="staticEmail" className="col-sm-2 col-form-label">Name</label>
                 <div className="col-sm-6">
-            <input type="text" className="form-control" id="name" value="text"></input>
+            <input type="text" className="form-control" id="name" value="text" {...props}/>
         </div>
         <div className="form-group">
             <label for="staticEmail" className="col-sm-2 col-form-label">Email</label>
                 <div className="col-sm-6">
-            <input type="text" className="form-control" id="staticEmail" value="email@example.com"></input>
+            <input type="text" className="form-control" id="staticEmail" value="email@example.com" {...props} />
           </div>
         </div>
         <div className="form-group">
             <label for="inputPassword" className="col-sm-2 col-form-label">Password</label>
                 <div className="col-sm-6">
-            <input type="password" className="form-control" id="inputPassword" placeholder="Password"></input>
+            <input type="password" className="form-control" id="inputPassword" placeholder="Password" {...props} />
         </div>
         <br></br>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button {...props} type="submit" className="btn btn-primary">{props.children}Submit</button>
         </div>
         </div>
         </form>
