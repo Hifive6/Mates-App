@@ -1,4 +1,3 @@
-
 #login {
     display: flex;
     justify-content: center;
@@ -6,27 +5,35 @@
     padding-right: 85px;
     width: 350px;
     box-shadow: .5em;
-   
+    margin: 60px;
 }
-h1{
+
+.form-group {
+    text-align: center;
+}
+
+h1 {
     display: inline-block;
     text-align: center;
     font-size: 120px;
-    color: yellow;
+    color: darkorange;
     text-shadow: 1.5px 1.5px 1.5px white;
     font-style: italic;
-    font-weight: 800;
     position: absolute; 
     left: 0; 
     width: 100%;   
+    font-family: 'Rock Salt', cursive;
+    padding: 50px;
 }
 
 body, html {
     height: 100%;
+    text-align: center;
     
-  }
+}
+
 .background { 
-    background-image: url("../../pic/front.jpg");
+    background-image: url("../../pic/apt.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,4 +43,9 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  }
+}
+
+.btn {
+    background-color: darkorange;
+    border-color: white;
+}
