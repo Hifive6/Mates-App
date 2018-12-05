@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import Messageboard from '../messagebox/messageboard'
-import Jumbotronjs from '../Jumbotron/jumbotron';
 
-export default class myOwnNavbar extends Component {
+
+export default class MyOwnNavbar extends Component {
   render() {
     return (
       <div>
@@ -23,9 +22,8 @@ export default class myOwnNavbar extends Component {
           </div>
         </nav>
 
-        <div id="test1" className="col s12">
-        <Jumbotronjs />
-        <Messageboard /></div>
+        <div id="test1" className="col s12"> </div>
+       
         <div id="test2" className="col s12">Test 2</div>
         <div id="test3" className="col s12">Test 3</div>
         <div id="test4" className="col s12">Test 4</div>
