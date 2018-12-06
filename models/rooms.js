@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schem;
-const passportLocalMongoose = require("passport-local-mongoose");
+//const passportLocalMongoose = require("passport-local-mongoose");
 
-roomSchema = new Schema ({
+roomSchema = mongoose.Schema ({
     nameOfRoom: {
         type: String,
         require: true,
@@ -37,6 +37,6 @@ roomSchema = new Schema ({
 
 const Room = mongoose.model("Room", roomSchema);
 
-Room.plugin(passportLocalMongoose);
+//Room.plugin(passportLocalMongoose);
 
 module.exports = Room;

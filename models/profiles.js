@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema
-const passportLocalMongoose = require("passport-local-mongoose")
+//const passportLocalMongoose = require("passport-local-mongoose")
 
-profileSchema = new Schema ({
+profileSchema =  mongoose.Schema ({
     email: {
         type: String,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
@@ -76,6 +76,6 @@ profileSchema = new Schema ({
 
 const Profile = mongoose.model("Profile", profileSchema);
 
-Profile.plugin(passportLocalMongoose)
+//Profile.plugin(passportLocalMongoose)
 
 module.exports = Profile;

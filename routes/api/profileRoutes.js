@@ -1,3 +1,16 @@
+const router = require("express").Router();
+const profileController = require("../../Controllers/profileController")
+
+
+router.route("/")
+ .get(profileController.findAll)
+ .post(profileController.create);
+
+ router.route("/:id")
+    .get(profileController.findByID)
+    .put(profileController.update)
+
+    module.exports = router;
 // var path = require("path");
 
 
