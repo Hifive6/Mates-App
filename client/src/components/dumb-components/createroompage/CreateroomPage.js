@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './createroom.css'
 
 export default class Createroompage extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class Createroompage extends Component {
              Edit Profile
             </button>
     </div>
-    <div class="container">
+    <div class="container back">
 
         <div class="card text-center">
             <div class="card-header">
