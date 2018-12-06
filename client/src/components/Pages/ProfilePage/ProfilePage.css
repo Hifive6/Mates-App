@@ -1,0 +1,47 @@
+h1   {
+    display: top;
+    
+    font-size: 100px; 
+    color: darkorange;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-style: italic; 
+    left: 0;
+    width: 100%;   
+    font-family: 'Rock Salt', cursive;
+    
+ }
+
+.background { 
+    background-image: url("../ProfilePage/redhouse.jpg");
+    height:stretch;
+    
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+.login {
+    
+
+    opacity: .9;
+    padding-right: 85px; 
+    width: 700px;
+    box-shadow: .5em;
+    font-size: 30px;
+}
+
+button {
+    margin: 15px;
+}
+
+.btn {
+    background-color: darkorange;
+    border-color: white;
+}
+
+label {
+    color: black;
+}
+
+.profile-name {
+    
+}

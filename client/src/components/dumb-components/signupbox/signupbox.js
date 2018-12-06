@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import '../signupbox/signup.css'
+import '../SignupBox/signup.css'
 
 import Carousel1 from '../carousel1/Carousel1';
-export default class Signupbox extends Component {
+export default class SignupBox extends Component {
   render() {
     return (
       <div>
