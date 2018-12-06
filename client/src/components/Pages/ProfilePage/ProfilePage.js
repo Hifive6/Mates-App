@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD
-import EmergencyContactHeader from '../../dumb-components/profileform/EmergencyContactHeader'
-import EmergencyContactNameImput from '../../dumb-components/profileform/EmergencyContactNameInput'
-import FirstNameInput from '../../dumb-components/profileform/FirstNameInput'
-import LastNameInput from '../../dumb-components/profileform/LastNameInput'
-import PhoneNumberInput from '../../dumb-components/profileform/PhoneNumberInput'
-import ProfilePageButton from '../../dumb-components/profileform/ProfilePageButton'
-import RelationInput from '../../dumb-components/profileform/RelationInput'
-=======
+
 import EmergencyContactHeader from '../../dumb-components/ProfileForm/EmergencyContactHeader'
 import EmergencyContactNameImput from '../../dumb-components/ProfileForm/EmergencyContactNameInput'
 import FirstNameInput from '../../dumb-components/ProfileForm/FirstNameInput'
@@ -17,7 +9,10 @@ import ProfilePageButton from '../../dumb-components/ProfileForm/ProfilePageButt
 import RelationInput from '../../dumb-components/ProfileForm/RelationInput'
 import EmailInput from '../../dumb-components/ProfileForm/EmailInput'
 import PasswordInput from '../../dumb-components/ProfileForm/PasswordInput'
->>>>>>> 6c0522dce38e2f5dacf0671b43e586482c50f814
+
+
+
+import '../../Pages/ProfilePage/ProfilePage.css'
 
 
 export default class ProfilePage extends Component {
@@ -25,13 +20,20 @@ export default class ProfilePage extends Component {
 
 
         return (
-            <div>
+            <div className="profile-name">
+                  <h1 style={{marginTop: "4%"}}>Profile</h1>
+            <div className="background">
+           
+ 
 
-                <div style={{marginTop: '20%'}} class="container shadow-lg p-3 mb-5 bg-white rounded">
-
+                <div style={{marginTop: "12%", opacity: ".9", paddingRight: '-110px'}} class=" container shadow-lg p-3 mb-5 bg-white rounded">
+         
                     <form>
-                    <div class="form-row">
-                            <div class="form-group col-md-4">
+                        <h3>Information</h3>
+                        
+                        
+                    <div class="form-row ">
+                            <div class="form-group col-md-6">
                                 <EmailInput />
                                 </div>
                                 <div class="form-group col-md-4">
@@ -57,8 +59,11 @@ export default class ProfilePage extends Component {
                                 </div>
                             
                        
+                         <h3>Emergency Contact</h3>
 
                         <div class="row">
+
+
                             <div class="form-group col-md-3">
 
 
@@ -91,7 +96,7 @@ export default class ProfilePage extends Component {
                 </div>
 
             </div>
-
+</div>
         )
     }
 }
