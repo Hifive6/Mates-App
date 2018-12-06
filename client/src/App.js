@@ -27,7 +27,7 @@ import {
 } from 'reactstrap';
 
 
-import Carousel1 from './components/dumb-components/carousel1/Carousel1';
+
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
 
 
