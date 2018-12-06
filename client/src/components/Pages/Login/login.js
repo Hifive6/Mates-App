@@ -3,7 +3,7 @@ import Loginbox from "../../dumb-components/loginbox/loginbox.js"
 import API from "../../../../../utils/API.js";
 
 
-class Home extends Compenent {
+class Home extends Component {
 
     state = {
         username: "",
