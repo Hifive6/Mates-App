@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import EmergencyContactHeader from '../../dumb-components/ProfileForm/EmergencyContactHeader'
-import EmergencyContactNameImput from '../../dumb-components/ProfileForm/EmergencyContactNameInput'
-import FirstNameInput from '../../dumb-components/ProfileForm/FirstNameInput'
-import LastNameInput from '../../dumb-components/ProfileForm/LastNameInput'
-import PhoneNumberInput from '../../dumb-components/ProfileForm/PhoneNumberInput'
-import ProfilePageButton from '../../dumb-components/ProfileForm/ProfilePageButton'
-import RelationInput from '../../dumb-components/ProfileForm/RelationInput'
+import EmergencyContactHeader from '../../dumb-components/profileform/EmergencyContactHeader'
+import EmergencyContactNameImput from '../../dumb-components/profileform/EmergencyContactNameInput'
+import FirstNameInput from '../../dumb-components/profileform/FirstNameInput'
+import LastNameInput from '../../dumb-components/profileform/LastNameInput'
+import PhoneNumberInput from '../../dumb-components/profileform/PhoneNumberInput'
+import ProfilePageButton from '../../dumb-components/profileform/ProfilePageButton'
+import RelationInput from '../../dumb-components/profileform/RelationInput'
 
 
 export default class ProfilePage extends Component {
