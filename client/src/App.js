@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+
 import MyOwnNavbar from './components/dumb-components/navbar/Navbar'
 import Jumbotronjs from './components/dumb-components/Jumbotron/Jumbotron'
 import Messageboard from './components/dumb-components/messagebox/MessageBoard'
 import LoginBox from './components/dumb-components/loginbox/LoginBox'
 import SignupBox from './components/dumb-components/SignupBox/SignupBox'
+
 import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
@@ -28,8 +30,8 @@ import {
 } from 'reactstrap';
 
 
-
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
+
 
 
 class App extends Component {
