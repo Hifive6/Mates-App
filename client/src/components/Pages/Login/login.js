@@ -35,13 +35,13 @@ class Home extends Component {
         event.preventDefault();
         if(this.state.username && this.state.password){
 
-            API.saveProfile({
-                email: this.state.email,
-                password: this.state.password
+            // API.saveProfile({
+            //     email: this.state.email,
+            //     password: this.state.password
             
-            })
+            // })
                 // .then(res => this)
-
+                //this is the login page, saveProfile, needed on the SignUp page...
 
         }
 
