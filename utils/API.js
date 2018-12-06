@@ -5,6 +5,10 @@ export default {
   getProfile: function() {
     return axios.get("/api/profile");
   },
+
+  getRoom: function(){
+      return axios.get("/api/room");
+  },
   // Gets the book with the given id
 //   getUser: function(id) {
 //     return axios.get("/api/user/" + id);
