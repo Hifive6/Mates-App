@@ -43,6 +43,15 @@ profileSchema = new Schema ({
                 }
             ],
     },
+    relationToTenants:{
+            type: String,
+            require: true,
+            validate: [
+                function(input){
+                    return input.length >= 10;
+                }
+            ],
+    },
     phoneNumber: {
         type: Number,
         unique: true,
