@@ -18,7 +18,7 @@ router.route("/id:")
 
 
 //Matches with /api/profile
-router.route("/profile:id")
+router.route("/profile/id:")
   .get(profileController.findProfile)
   .post(profileController.createProfile)
   

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Loginbox from "../../dumb-components/loginbox/loginbox.js"
+import API from "../../../../../utils/API.js";
 
 
 class Home extends Compenent {
@@ -10,6 +11,16 @@ class Home extends Compenent {
 
     };
 
+    // componentDidMount() {
+
+    //     this.loadRooms();
+    // }
+
+    // loadRooms = () =>  {
+    //     API.getRooms()
+    //     .then(res => 
+    //         this.setState({}))
+    // }
 
     handleInputChange = event => {
         const {name, value} = event.target;
@@ -22,7 +33,7 @@ class Home extends Compenent {
         event.preventDefault();
         if(this.state.username && this.state.password){
 
-            
+
 
 
         }

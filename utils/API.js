@@ -1,12 +1,12 @@
 import axios from "axios";
 
 export default {
-  // Gets user profile
+  // Gets user profile...
   getProfile: function() {
     return axios.get("/api/profile" + id);
   },
 
-  //Gets room with a specific id
+  //Gets room with a specific id...
   getRoom: function() {
       return axios.get("/api/rooms" + id);
   },
