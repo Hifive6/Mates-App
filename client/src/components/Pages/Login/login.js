@@ -6,16 +6,18 @@ import API from "../../../../../utils/API.js";
 class Home extends Component {
 
     state = {
-        username: "",
+        email: "",
         password: ""
 
     };
 
+    //will be needed on the sign up page...
     // componentDidMount() {
 
     //     this.loadRooms();
     // }
 
+    //will be needed on the sign up page...    
     // loadRooms = () =>  {
     //     API.getRooms()
     //     .then(res => 
@@ -33,7 +35,12 @@ class Home extends Component {
         event.preventDefault();
         if(this.state.username && this.state.password){
 
-
+            API.saveProfile({
+                email: this.state.email,
+                password: this.state.password
+            
+            })
+                // .then(res => this)
 
 
         }
