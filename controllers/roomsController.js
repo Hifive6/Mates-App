@@ -17,14 +17,13 @@ module.exports = {
      },
 
     updateRoom: function (req, res) {
-
         var newTenant = db.Profile.find({ _id: req.params.id }, req.body)
-
         db.Room.update(
             { _id: roomId },
             { $addToSet: { Tenants: newTenant }}
         )
-
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err));
     }
 
 

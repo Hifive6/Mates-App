@@ -1,24 +1,27 @@
 import axios from "axios";
 
 export default {
-  // Gets all books
+  // Gets user profile
   getProfile: function() {
-    return axios.get("/api/profile");
+    return axios.get("/api/profile" + id);
   },
 
-  getRoom: function(){
+  //Gets room with a specific id
+  getRoom: function() {
+      return axios.get("/api/room" + id);
+  },
+  // Get all rooms....so user can join a room...
+  getRooms: function() {
       return axios.get("/api/room");
   },
-  // Gets the book with the given id
-//   getUser: function(id) {
-//     return axios.get("/api/user/" + id);
-//   },
-  // Deletes the book with the given id
-//   deleteUser: function(id) {
-//     return axios.delete("/api/users/" + id);
-//   },
-  // Saves a book to the database
+
+  //Saves a room to the database
+  saveRoom: function(rooms) {
+    return axios.post("/api/room", rooms )
+  },
+  
+  // Saves a profile to the database
   saveProfile: function(userProfiles) {
-    return axios.post("/api/profiles", userProfiles);
+    return axios.post("/api/profile", userProfiles);
   }
 };
