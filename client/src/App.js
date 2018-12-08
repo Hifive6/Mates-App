@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import MyOwnNavbar from './components/dumb-components/navbar/Navbar'
 import Jumbotronjs from './components/dumb-components/Jumbotron/Jumbotron'
 import Messageboard from './components/dumb-components/Messageboard/MessageBoardPage'
+
 import LoginBox from './components/dumb-components/loginbox/loginbox'
 import SignupBox from './components/dumb-components/SignupBox/signupbox'
 
@@ -35,49 +36,50 @@ import Createroompage from './components/dumb-components/CreateRoomPage/Createro
 
 
 
-class App extends Component {
+// class App extends Component {
 
-// const App = () => (
-//   <Router>
-//   <div>
-//     <Nav />
-//     <Route exact path="/" component={SignupBox} />
-//     <Route exact path="/" component={LoginPage} />
-//     <Route exact path="/" component={CreateRoomPage} />
-//   </div>
-// </Router>
+const App = () => (
+  <Router>
+  <div>
+    <Nav />
+    <Route exact path="/" component={LoginPage}/>
+    <Route exact path="/login" component={LoginPage} />
+    <Route exact path="/signup" component={SignupBox} />
+    <Route exact path="/createroom" component={CreateRoomPage} />
+  </div>
+</Router>
 
-  constructor(props) {
-    super(props);
+//   constructor(props) {
+//     super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
+//     this.toggle = this.toggle.bind(this);
+//     this.state = {
+//       isOpen: false
+//     };
+//   }
+//   toggle() {
+//     this.setState({
+//       isOpen: !this.state.isOpen
+//     });
+//   }
+//   render() {
+//     return (
+//       <div>
        
 
       
-     <Createroompage />
+     
 
 
-        </div>
+//         </div>
 
         
 
      
-    );
-  }
-}
-// );
+//     );
+//   }
+// }
+);
 
 
 export default App;
