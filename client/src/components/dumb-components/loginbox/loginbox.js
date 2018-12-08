@@ -18,8 +18,8 @@ export default class LoginBox extends Component {
      
        
 
-        <a href="/index"><button type="submit" class="btn btn-primary">Login</button></a>
-        <a href="/index"><button type="signup" class="btn btn-primary">Sign Up</button></a>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="signup" class="btn btn-primary">Sign Up</button>
     </form>
 
 </div>

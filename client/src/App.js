@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import MyOwnNavbar from './components/dumb-components/navbar/navbar'
 import Jumbotronjs from './components/dumb-components/Jumbotron/jumbotron'
 import Messageboard from './components/dumb-components/messagebox/messageboard'
@@ -34,37 +34,48 @@ import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
 
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+// class App extends Component {
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
+const App = () => (
+  <Router>
+  <div>
+    <Nav />
+    <Route exact path="/" component={SignupBox} />
+    <Route exact path="/about" component={LoginPage} />
+    <Route exact path="/discover" component={CreateRoomPage} />
+  </div>
+</Router>
+
+  // constructor(props) {
+  //   super(props);
+
+  //   this.toggle = this.toggle.bind(this);
+  //   this.state = {
+  //     isOpen: false
+  //   };
+  // }
+  // toggle() {
+  //   this.setState({
+  //     isOpen: !this.state.isOpen
+  //   });
+  // }
+  // render() {
+  //   return (
+  //     <div>
        
 
       
-     <LoginPage />
+  //    <LoginPage />
 
 
-        </div>
+  //       </div>
 
         
 
      
-    );
-  }
-}
+  //   );
+  // }
+);
 
 
 export default App;

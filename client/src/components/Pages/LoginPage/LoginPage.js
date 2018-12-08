@@ -15,15 +15,16 @@ export default class LoginPage extends Component {
 
     };
 
-    handleFormSubmit = event => {
-        event.preventDefault();
-        if(this.state.username && this.state.password){
+    // handleFormSubmit = event => {
+    //     event.preventDefault();
+    //     if(this.state.username && this.state.password){
 
-            
-            
-                <Createroompage />
-            );
-        }
+    //     //    React.render (
+    //         <div>
+    //             <Createroompage  url="/api/"/>
+    //         </div>
+    //         // );
+    //     };
 
   render() {
     return (
