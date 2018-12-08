@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const roomController = require("../../controllers/roomController");
+const roomController = require("../../controllers/roomsController");
 const profileController = require("../../controllers/profileController");
 
 
@@ -19,7 +19,7 @@ router.route("/id:")
 
 //Matches with /api/profile
 router.route("/profile/id:")
-  .get(profileController.findProfile)
+  .get(profileController.findById)
   .post(profileController.createProfile)
   
 
