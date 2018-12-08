@@ -6,7 +6,7 @@ export default class RlationInput extends Component {
       <div>
          
                     <label for="inputZip">Relation</label>
-                    <input type="text" class="form-control" id="inputZip"></input>
+                    <input type="text" className="form-control" id="inputZip"></input>
                
       </div>
     )

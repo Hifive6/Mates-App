@@ -8,9 +8,9 @@ export default class LoginBox extends Component {
             <div>
   <h1 id="titleLanding">M A T E S</h1>
 
-<div class="background">
+<div className="background">
             
-<div id="login" class="container shadow-lg p-3 mb-5 bg-white rounded">
+<div id="login" className="container shadow-lg p-3 mb-5 bg-white rounded">
     <form>
 
        
@@ -18,8 +18,8 @@ export default class LoginBox extends Component {
      
        
 
-        <a href="/index"><button type="submit" class="btn btn-primary">Login</button></a>
-        <a href="/index"><button type="signup" class="btn btn-primary">Sign Up</button></a>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="signup" class="btn btn-primary">Sign Up</button>
     </form>
 
 </div>

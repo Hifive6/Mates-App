@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import '../SignupBox/signup.css'
+import '../signupbox/signup.css'
 
-import Carousel1 from '../carousel1/Carousel1';
+import Carousel1 from '../carousel1/carousel1';
 export default class SignupBox extends Component {
   render() {
     return (
