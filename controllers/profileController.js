@@ -4,15 +4,13 @@ module.exports = {
 
     findAllProfiles: function(req, res){
         db.Profile
-        .find(req.params.id)
+        .find(req.query)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
-
-     createProfile: function (req, res){
-
+    findbyID: function(req, res) {
         db.Profile
-        .create(req.body)
+        .findByID(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
      },
