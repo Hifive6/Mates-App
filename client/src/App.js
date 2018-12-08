@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import MyOwnNavbar from './components/dumb-components/navbar/Navbar'
-import Jumbotronjs from './components/dumb-components/Jumbotron/Jumbotron'
+import MyOwnNavbar from './components/dumb-components/navbar/navbar'
+import Jumbotronjs from './components/dumb-components/Jumbotron/jumbotron'
 import Messageboard from './components/dumb-components/Messageboard/MessageBoardPage'
 
 import LoginBox from './components/dumb-components/loginbox/loginbox'
-import SignupBox from './components/dumb-components/SignupBox/signupbox'
+import SignupBox from './components/dumb-components/signupbox/signupbox'
 
 import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
-import CreateRoomPage from './components/dumb-components/CreateRoomPage/CreateroomPage'
+import CreateRoomPage from './components/dumb-components/createroompage/CreateroomPage'
 import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
 
 
@@ -46,6 +46,7 @@ const App = () => (
     <Route exact path="/login" component={LoginPage} />
     <Route exact path="/signup" component={SignupBox} />
     <Route exact path="/createroom" component={CreateRoomPage} />
+    <Route path="*" component={LoginPage}/>
   </div>
 </Router>
 

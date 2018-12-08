@@ -12,7 +12,7 @@ img{
 
 
 .background { 
-    background-image: url("../SignupBox/colors.jpg");
+    background-image: url("../signupbox/colors.jpg");
     display: flex;
     align-items: center;
     justify-content: center;

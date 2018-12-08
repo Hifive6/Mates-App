@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../SignupBox/signup.css'
+import '../signupbox/signup.css'
 
 
 
