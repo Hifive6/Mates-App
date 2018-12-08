@@ -41,7 +41,6 @@ import Createroompage from './components/dumb-components/createroompage/Createro
 const App = () => (
   <Router>
   <div>
-    {/* <Nav /> */}
     <Route exact path="/" component={LoginPage}/>
     <Route exact path="/login" component={LoginPage} />
     <Route exact path="/signup" component={SignupBox} />
