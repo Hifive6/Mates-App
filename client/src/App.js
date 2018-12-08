@@ -30,6 +30,7 @@ import {
 
 
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
+import Createroompage from './components/dumb-components/CreateRoomPage/CreateroomPage';
 
 
 class App extends Component {
@@ -52,7 +53,7 @@ class App extends Component {
        
 
       
-     <CreateRoomPage />
+     <Createroompage />
 
 
         </div>
