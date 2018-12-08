@@ -5,7 +5,7 @@ export default class EmergencyContactNameInput extends Component {
     return (
       <div>
             <label for="inputZip">Name</label>
-            <input type="text" class="form-control" id="Full Name"></input>
+            <input type="text" className="form-control" id="Full Name"></input>
       </div>
     )
   }
