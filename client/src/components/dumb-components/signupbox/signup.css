@@ -3,3 +3,28 @@ img{
     display: block;
     background-size: auto 100%;
 }
+
+.form-group {
+    text-align: center;
+}
+
+
+
+
+.background { 
+    background-image: url("../SignupBox/colors.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    margin-top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn {
+    background-color: darkorange;
+    border-color: white;
+}

@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from "react-router-dom"
-import MyOwnNavbar from './components/dumb-components/navbar/navbar'
-import Jumbotronjs from './components/dumb-components/Jumbotron/jumbotron'
-import Messageboard from './components/dumb-components/messagebox/messageboard'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import MyOwnNavbar from './components/dumb-components/navbar/Navbar'
+import Jumbotronjs from './components/dumb-components/Jumbotron/Jumbotron'
+import Messageboard from './components/dumb-components/Messageboard/MessageBoardPage'
+
 import LoginBox from './components/dumb-components/loginbox/loginbox'
-import SignupBox from './components/dumb-components/signupbox/signupbox'
+import SignupBox from './components/dumb-components/SignupBox/signupbox'
 
 import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
-import CreateRoomPage from './components/dumb-components/createroompage/CreateroomPage'
-// import MessageBoard from '../src/components/Pages/Messageboard/MessageBoardPage'
+import CreateRoomPage from './components/dumb-components/CreateRoomPage/CreateroomPage'
+import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
 
 
 import {
