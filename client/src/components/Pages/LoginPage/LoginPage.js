@@ -4,10 +4,27 @@ import PasswordInputField from '../../dumb-components/loginbox/PasswordInputFiel
 import LoginButton from '../../dumb-components/loginbox/LoginButton'
 import RememberMeCheckBox from '../../dumb-components/loginbox/RememberMeCheckBox'
 import SignUpButton from '../../dumb-components/loginbox/SignUpButton';
-import Home from "../../Pages/Login/login"
+import Createroompage from "../../dumb-components/createroompage/CreateroomPage"
 import '../LoginPage/LoginPage.css'
 
 export default class LoginPage extends Component {
+
+    state = {
+        email: "",
+        password: ""
+
+    };
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        if(this.state.username && this.state.password){
+
+            
+            
+                <Createroompage />
+            );
+        }
+
   render() {
     return (
       
