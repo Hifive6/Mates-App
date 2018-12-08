@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import EmailInputField from '../../dumb-components/loginbox/EmailInputField'
 import PasswordInputField from '../../dumb-components/loginbox/PasswordInputField'
 import LoginButton from '../../dumb-components/loginbox/LoginButton'
@@ -15,14 +16,22 @@ export default class LoginPage extends Component {
 
     };
 
+    // handleInputChange= event => {
+        
+    // }
+
+    // handleBtnClick = event => {
+       
+    //     return <a href="/createroom"></a>
+    // }
     // handleFormSubmit = event => {
     //     event.preventDefault();
     //     if(this.state.username && this.state.password){
 
     //     //    React.render (
-    //         <div>
-    //             <Createroompage  url="/api/"/>
-    //         </div>
+    //         // <div>
+    //         //     <Createroompage  url="/api/"/>
+    //         // </div>
     //         // );
     //     };
 
@@ -50,9 +59,16 @@ export default class LoginPage extends Component {
 
 
 <div className="row">
-<LoginButton 
-onClick={this.handleFormSubmit}/>
+<Link to="/createroom">
+<LoginButton />
+</Link>
+   
+{/* </LoginButton>  */}
+
+
+<Link to="/signup">
 <SignUpButton />
+</Link>
 </div>
    
         </form>
