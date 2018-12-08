@@ -8,7 +8,7 @@ import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
 import CreateRoomPage from './components/dumb-components/CreateRoomPage/CreateroomPage'
-import MessageBoard from '../src/components/Pages/Messageboard/MessageBoardPage'
+import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
 
 
 import {
@@ -53,7 +53,7 @@ class App extends Component {
        
 
       
-     <Createroompage />
+     <SignupBox />
 
 
         </div>
