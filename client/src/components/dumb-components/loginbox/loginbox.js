@@ -18,8 +18,8 @@ export default class LoginBox extends Component {
      
        
 
-        <button type="submit" class="btn btn-primary">Login</button>
-        <button type="signup" class="btn btn-primary">Sign Up</button>
+       <a href="/createroom"><button type="submit" class="btn btn-primary">Login</button></a>
+        <a href="/signup"><button type="signup" class="btn btn-primary">Sign Up</button></a>
     </form>
 
 </div>

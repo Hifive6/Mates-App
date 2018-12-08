@@ -15,14 +15,24 @@ export default class LoginPage extends Component {
 
     };
 
+    handleInputChange= event => {
+        this.setState({
+            // email: event.target.value,
+            // password: event.target.value
+        });
+    }
+
+    handleBtnClick = event => {
+
+    }
     // handleFormSubmit = event => {
     //     event.preventDefault();
     //     if(this.state.username && this.state.password){
 
     //     //    React.render (
-    //         <div>
-    //             <Createroompage  url="/api/"/>
-    //         </div>
+    //         // <div>
+    //         //     <Createroompage  url="/api/"/>
+    //         // </div>
     //         // );
     //     };
 
@@ -51,7 +61,7 @@ export default class LoginPage extends Component {
 
 <div className="row">
 <LoginButton 
-onClick={this.handleFormSubmit}/>
+onClick={this.handleBtnClick}/>
 <SignUpButton />
 </div>
    
