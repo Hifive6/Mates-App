@@ -65,7 +65,7 @@ class App extends Component {
        
 
       
-     <LoginPage />
+     <CreateRoomPage />
 
 
         </div>

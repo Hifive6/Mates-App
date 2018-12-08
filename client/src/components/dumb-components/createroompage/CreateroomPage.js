@@ -7,12 +7,7 @@ export default class Createroompage extends Component {
       <div>
         
         <div className="container">
-        <button type="button" className="btn btn-primary shadow-lg p-3 mb-5">
-            Notifications <span className="badge badge-light">0</span>
-        </button>
-        <button type="button" clasName="float-right btn btn-primary shadow-lg p-3 mb-5">
-             Edit Profile
-            </button>
+      
     </div>
     <div className="container back">
 
@@ -24,6 +19,7 @@ export default class Createroompage extends Component {
                 <h5 className="card-title">Welcome To Mates</h5>
                 <p className="card-text">Please take a minute and creat your room if you do not already belong to one.</p>
                 <a href="#" className="btn btn-primary">Create Room</a>
+                <a href="#" className="btn btn-primary">Join a Room</a>
             </div>
             <div className="card-footer text-muted">
                 
