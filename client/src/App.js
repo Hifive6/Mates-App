@@ -34,48 +34,49 @@ import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
 
 
 
-// class App extends Component {
+class App extends Component {
 
-const App = () => (
-  <Router>
-  <div>
-    <Nav />
-    <Route exact path="/" component={SignupBox} />
-    <Route exact path="/about" component={LoginPage} />
-    <Route exact path="/discover" component={CreateRoomPage} />
-  </div>
-</Router>
+// const App = () => (
+//   <Router>
+//   <div>
+//     <Nav />
+//     <Route exact path="/" component={SignupBox} />
+//     <Route exact path="/" component={LoginPage} />
+//     <Route exact path="/" component={CreateRoomPage} />
+//   </div>
+// </Router>
 
-  // constructor(props) {
-  //   super(props);
+  constructor(props) {
+    super(props);
 
-  //   this.toggle = this.toggle.bind(this);
-  //   this.state = {
-  //     isOpen: false
-  //   };
-  // }
-  // toggle() {
-  //   this.setState({
-  //     isOpen: !this.state.isOpen
-  //   });
-  // }
-  // render() {
-  //   return (
-  //     <div>
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
        
 
       
-  //    <LoginPage />
+     <LoginPage />
 
 
-  //       </div>
+        </div>
 
         
 
      
-  //   );
-  // }
-);
+    );
+  }
+}
+// );
 
 
 export default App;
