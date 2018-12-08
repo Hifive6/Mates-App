@@ -3,12 +3,13 @@ const profileController = require("../../Controllers/profileController")
 
 
 router.route("/")
- .get(profileController.findAll)
- .post(profileController.create);
+ .post(profileController.createProfile)
+ .get(profileController.findAllProfiles);
+ 
 
  router.route("/:id")
-    .get(profileController.findByID)
-    .put(profileController.update)
+    .get(profileController.findById)
+    .put(profileController.updateProfile)
 
     module.exports = router;
 // var path = require("path");
