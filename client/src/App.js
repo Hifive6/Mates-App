@@ -10,7 +10,7 @@ import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
 import CreateRoomPage from './components/dumb-components/createroompage/CreateroomPage'
-import MessageBoard from '../src/components/Pages/Messageboard/MessageBoardPage'
+// import MessageBoard from '../src/components/Pages/Messageboard/MessageBoardPage'
 
 
 import {
@@ -31,7 +31,7 @@ import {
 
 
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
-import Createroompage from './components/dumb-components/CreateRoomPage/CreateroomPage';
+import Createroompage from './components/dumb-components/createroompage/CreateroomPage';
 
 
 
@@ -40,7 +40,7 @@ import Createroompage from './components/dumb-components/CreateRoomPage/Createro
 const App = () => (
   <Router>
   <div>
-    <Nav />
+    {/* <Nav /> */}
     <Route exact path="/" component={LoginPage}/>
     <Route exact path="/login" component={LoginPage} />
     <Route exact path="/signup" component={SignupBox} />
