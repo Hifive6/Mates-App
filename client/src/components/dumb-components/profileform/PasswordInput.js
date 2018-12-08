@@ -6,7 +6,7 @@ export default class PasswordInput extends Component {
       <div>
         
         <label for="inputPassword4">Password</label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="Password"></input>
+            <input type="text" className="form-control" id="inputPassword4" placeholder="Password"></input>
        
       </div>
     )

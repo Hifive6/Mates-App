@@ -5,10 +5,10 @@ export default class Profilebox extends Component {
     return (
       <div>
         
-        <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+        <div className="container shadow-lg p-3 mb-5 bg-white rounded">
 
 <form>
-    <div class="form-row">
+    <div className="form-row">
         {/* <div class="form-group col-md-6">
             <label for="inputEmail4">First Name</label>
             <input type="text" class="form-control" id="inputEmail4" placeholder="First Name"></input>
@@ -19,8 +19,8 @@ export default class Profilebox extends Component {
         </div> */}
     </div>
     
-    <div class="row">
-    <div class="form-group col-md-3">
+    <div className="row">
+    <div className="form-group col-md-3">
         {/* <div class="align-center">
         <h3>Emergency Contact</h3>
         </div> */}

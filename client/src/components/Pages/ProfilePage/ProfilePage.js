@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import EmergencyContactHeader from '../../dumb-components/ProfileForm/EmergencyContactHeader'
 import EmergencyContactNameImput from '../../dumb-components/ProfileForm/EmergencyContactNameInput'
 import FirstNameInput from '../../dumb-components/ProfileForm/FirstNameInput'
@@ -8,7 +9,11 @@ import ProfilePageButton from '../../dumb-components/ProfileForm/ProfilePageButt
 import RelationInput from '../../dumb-components/ProfileForm/RelationInput'
 import EmailInput from '../../dumb-components/ProfileForm/EmailInput'
 import PasswordInput from '../../dumb-components/ProfileForm/PasswordInput'
+
+
+
 import '../../Pages/ProfilePage/ProfilePage.css'
+
 
 export default class ProfilePage extends Component {
     render() {
@@ -21,17 +26,17 @@ export default class ProfilePage extends Component {
            
  
 
-                <div style={{marginTop: "12%", opacity: ".9", paddingRight: '-110px'}} class=" container shadow-lg p-3 mb-5 bg-white rounded">
+                <div style={{marginTop: "12%", opacity: ".9", paddingRight: '-110px'}} className=" container shadow-lg p-3 mb-5 bg-white rounded">
          
                     <form>
                         <h3>Information</h3>
                         
                         
-                    <div class="form-row ">
-                            <div class="form-group col-md-6">
+                    <div className="form-row ">
+                            <div className="form-group col-md-6">
                                 <EmailInput />
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div className="form-group col-md-4">
 
 
                                     <PasswordInput />
@@ -40,11 +45,11 @@ export default class ProfilePage extends Component {
                                     </div>
                                 </div>
 
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
+                        <div className="form-row">
+                            <div className="form-group col-md-4">
                                 <FirstNameInput />
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div className="form-group col-md-4">
 
 
                                     <LastNameInput />
@@ -56,24 +61,24 @@ export default class ProfilePage extends Component {
                        
                          <h3>Emergency Contact</h3>
 
-                        <div class="row">
+                        <div className="row">
 
 
-                            <div class="form-group col-md-3">
+                            <div className="form-group col-md-3">
 
 
                                 <EmergencyContactHeader />
                                 <EmergencyContactNameImput />
 
                             </div>
-                            <div class="form-group col-md-3">
+                            <div className="form-group col-md-3">
 
 
                                 <PhoneNumberInput />
 
 
                             </div>
-                            <div class="form-group col-md-3">
+                            <div className="form-group col-md-3">
 
                                 <RelationInput />
 

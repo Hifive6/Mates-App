@@ -6,7 +6,7 @@ export default class PhoneNumberInput extends Component {
       <div>
          
                 <label for="inputZip">Phone Number</label>
-                <input type="text" class="form-control" id="1+(XXX)XXX-XXX"></input>
+                <input type="text" classname="form-control" id="1+(XXX)XXX-XXX"></input>
                </div>
     )
   }
