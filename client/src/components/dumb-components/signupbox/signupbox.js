@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { Component } from 'react'
 // import '../signupbox/signup.css'
 
@@ -6,6 +7,16 @@
 //   render() {
 //     return (
 //       <div>
+=======
+import React, { Component } from 'react'
+import '../SignupBox/signup.css'
+
+import Carousel1 from '../carousel1/Carousel1';
+export default class SignupBox extends Component {
+  render() {
+    return (
+      <div>
+>>>>>>> 67e2540a4bfc1668391406219b403c1298261491
         
        
 // <Carousel1 />
