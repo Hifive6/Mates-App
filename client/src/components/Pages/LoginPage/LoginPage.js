@@ -4,6 +4,7 @@ import PasswordInputField from '../../dumb-components/loginbox/PasswordInputFiel
 import LoginButton from '../../dumb-components/loginbox/LoginButton'
 import RememberMeCheckBox from '../../dumb-components/loginbox/RememberMeCheckBox'
 import SignUpButton from '../../dumb-components/loginbox/SignUpButton';
+import Home from "../../Pages/Login/login"
 import '../LoginPage/LoginPage.css'
 
 export default class LoginPage extends Component {
@@ -31,7 +32,9 @@ export default class LoginPage extends Component {
 
 
 <div className="row">
-<LoginButton /><SignUpButton />
+<LoginButton 
+onClick={this.handleFormSubmit}/>
+<SignUpButton />
 </div>
    
         </form>

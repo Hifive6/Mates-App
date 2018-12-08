@@ -1,6 +1,9 @@
-import React, { Component } from "react";
-import Loginbox from "../../dumb-components/loginbox/loginbox.js"
-import API from "../../../../../utils/API.js";
+import React, { Component } from "react"
+import {render} from "react-dom"
+// import Loginbox from "../../dumb-components/loginbox/loginbox.js"
+// import LoginPage from "../../Pages/LoginPage"
+import Createroompage from "../../dumb-components/createroompage/CreateroomPage"
+// import API from "../../../../../utils/API.js"
 
 
 class Home extends Component {
@@ -14,7 +17,7 @@ class Home extends Component {
     //will be needed on the sign up page...
     // componentDidMount() {
 
-    //     this.loadRooms();
+        
     // }
 
     //will be needed on the sign up page...    
@@ -34,6 +37,12 @@ class Home extends Component {
     handleFormSubmit = event => {
         event.preventDefault();
         if(this.state.username && this.state.password){
+
+            render()
+            return (
+                <Createroompage />
+            );
+            
 
             // API.saveProfile({
             //     email: this.state.email,
