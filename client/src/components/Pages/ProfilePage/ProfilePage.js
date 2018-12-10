@@ -9,13 +9,46 @@ import ProfilePageButton from '../../dumb-components/ProfileForm/ProfilePageButt
 import RelationInput from '../../dumb-components/ProfileForm/RelationInput'
 import EmailInput from '../../dumb-components/ProfileForm/EmailInput'
 import PasswordInput from '../../dumb-components/ProfileForm/PasswordInput'
-
+import API from "../../../utils/API";
 
 
 import '../../Pages/ProfilePage/ProfilePage.css'
 
 
 export default class ProfilePage extends Component {
+
+    state ={
+        email: "",
+        password: "",
+        firstName: "",
+        lastName: "",
+        emergencyContact:"",
+        phoneNumber: "",
+        relationToTenant: "",
+    };
+
+    handleInputChange = event => {
+        const {name, value} = event.target;
+        this.setState({
+            [name]: value
+        })
+    }
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        if (this.state.email && this.state.password && this.state.firstName){
+            API.saveProfile({
+                email: this.state.email,
+                password: this.state.email,
+                firstName: this.state.firstName,
+                lastName: this.state.lastName,
+                emergencyContact: this.state.emergencyContact,
+                phononNumber: this.state.phoneNumber,
+                relationToTenant: this.state.relationToTenant
+            })
+            .catch(err => console.log(err))
+        }
+    }
     render() {
 
 
@@ -34,12 +67,17 @@ export default class ProfilePage extends Component {
                         
                     <div className="form-row ">
                             <div className="form-group col-md-6">
-                                <EmailInput />
+                                <EmailInput 
+                                value={this.state.email}
+                                onChange={this.handleInputChange}
+                                />
                                 </div>
                                 <div className="form-group col-md-4">
 
 
-                                    <PasswordInput />
+                                    <PasswordInput 
+                                    value={this.state.password}
+                                    onChange={this.handleInputChange}/>
 
 
                                     </div>
@@ -47,12 +85,16 @@ export default class ProfilePage extends Component {
 
                         <div className="form-row">
                             <div className="form-group col-md-4">
-                                <FirstNameInput />
+                                <FirstNameInput
+                                value={this.state.firstName}
+                                onChange={this.handleInputChange} />
                                 </div>
                                 <div className="form-group col-md-4">
 
 
-                                    <LastNameInput />
+                                    <LastNameInput 
+                                    value={this.state.lastName}
+                                    onChange={this.handleInputChange}/>
 
 
                                     </div>
@@ -68,19 +110,28 @@ export default class ProfilePage extends Component {
 
 
                                 <EmergencyContactHeader />
-                                <EmergencyContactNameImput />
+                                <EmergencyContactNameImput
+                                value={this.state.emergencyContact}
+                                onChange={this.handleInputChange} 
+                                />
 
                             </div>
                             <div className="form-group col-md-3">
 
 
-                                <PhoneNumberInput />
+                                <PhoneNumberInput 
+                                value={this.state.phoneNumber}
+                                onChange={this.handleInputChange}
+                                />
 
 
                             </div>
                             <div className="form-group col-md-3">
 
-                                <RelationInput />
+                                <RelationInput
+                                value={this.state.relationToTenant}
+                                onChange={this.handleInputChange}
+                                />
 
 
                             </div>
@@ -88,7 +139,7 @@ export default class ProfilePage extends Component {
 
 
                         <ProfilePageButton
-                        
+                        onClick = {this.handleFormSubmit}
                         />
 
 
