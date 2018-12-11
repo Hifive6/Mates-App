@@ -3,7 +3,7 @@ const profileRoutes = require("./profileRoutes");
 const room = require("./room")
 
 // Profile routes
-router.use("/", profileRoutes);
+router.use("/profiles", profileRoutes);
 router.use("/rooms",room )
 
 module.exports = router;
