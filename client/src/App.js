@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import MyOwnNavbar from './components/dumb-components/navbar/Navbar'
 import Jumbotronjs from './components/dumb-components/Jumbotron/Jumbotron'
-import Messageboard from './components/dumb-components/messagebox/MessageBoard'
-import Loginbox from './components/dumb-components/loginbox/LoginBox'
-import Signupbox from './components/dumb-components/signupbox/SignupBox'
-import './App.css';
+import Messageboard from './components/dumb-components/Messageboard/MessageBoardPage'
 
-import Createroompage from './components/dumb-components/createroompage/CreateroomPage'
-import MessageBoard from '../src/components/Pages/Messageboard/MessageBoardPage'
+import LoginBox from './components/dumb-components/loginbox/loginbox'
+import SignupBox from './components/dumb-components/SignupBox/signupbox'
+
+import './App.css';
+import LoginPage from './components/Pages/LoginPage/LoginPage'
+
+import CreateRoomPage from './components/dumb-components/CreateRoomPage/CreateroomPage'
+import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
 
 
 import {
@@ -27,41 +31,55 @@ import {
 } from 'reactstrap';
 
 
-import Carousel1 from './components/dumb-components/carousel1/Carousel1';
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
+import Createroompage from './components/dumb-components/CreateRoomPage/CreateroomPage';
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
+// class App extends Component {
+
+const App = () => (
+  <Router>
+  <div>
+    <Nav />
+    <Route exact path="/" component={LoginPage}/>
+    <Route exact path="/login" component={LoginPage} />
+    <Route exact path="/signup" component={SignupBox} />
+    <Route exact path="/createroom" component={CreateRoomPage} />
+  </div>
+</Router>
+
+//   constructor(props) {
+//     super(props);
+
+//     this.toggle = this.toggle.bind(this);
+//     this.state = {
+//       isOpen: false
+//     };
+//   }
+//   toggle() {
+//     this.setState({
+//       isOpen: !this.state.isOpen
+//     });
+//   }
+//   render() {
+//     return (
+//       <div>
        
 
       
-     <ProfilePage />
+     
 
 
-        </div>
+//         </div>
 
         
 
      
-    );
-  }
-}
+//     );
+//   }
+// }
+);
 
 
 export default App;
