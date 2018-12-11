@@ -1,0 +1,79 @@
+h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 120px;
+    color: darkorange;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-style: italic;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    font-family: 'Rock Salt', cursive;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 30px;
+    color: darkorange;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-style: italic;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    font-family: 'Rock Salt', cursive;
+}
+
+.dropdown-menu {
+    display: inline-block;
+    color: darkorange;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-style: italic;
+    font-family: 'Rock Salt', cursive;
+}
+
+.navbar {
+    font-style: italic;
+    font-family: 'Rock Salt', cursive;
+    color: orange;
+    
+}
+
+.dropdown-item {
+    display: inline-block;
+    color: darkorange;
+    font-style: italic;
+    font-family: 'Rock Salt', cursive;
+}
+
+.background { 
+    background-image: url("../../pic/index.jpg");
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    margin-top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#jumbotron {
+    background-image: url("../../pic/index.jpg");
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    margin-top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.color-me {
+    display: inline-block;
+    color: darkorange;
+    font-style: italic;
+    font-family: 'Rock Salt', cursive;
+    padding: 8px;
+}
