@@ -5,7 +5,7 @@ export default class EmailInput extends Component {
     return (
       <div>
          <label for="inputEmail4">Email</label>
-            <input type="text" className="form-control" id="inputEmail4" placeholder="Email"></input>
+            <input type="text" className="form-control" id="inputEmail4" placeholder="Email" {...this.props}></input>
        
       </div>
     )

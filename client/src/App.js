@@ -5,14 +5,14 @@ import Jumbotronjs from './components/dumb-components/Jumbotron/Jumbotron'
 import Messageboard from './components/dumb-components/Messageboard/MessageBoardPage'
 
 import LoginBox from './components/dumb-components/loginbox/loginbox'
-import SignupBox from './components/dumb-components/SignupBox/signupbox'
+import SignupBox from './components/dumb-components/signupbox/signupbox'
 
 import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
-import CreateRoomPage from './components/dumb-components/CreateRoomPage/CreateroomPage'
+import CreateroomPage from './components/dumb-components/createroompage/CreateroomPage'
 import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
-
+import Profilepage from './components/Pages/ProfilePage/ProfilePage'
 
 import {
   
@@ -32,7 +32,7 @@ import {
 
 
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
-import Createroompage from './components/dumb-components/CreateRoomPage/CreateroomPage';
+//import Createroompage from './components/dumb-components/CreateRoomPage/CreateroomPage';
 
 
 
@@ -44,8 +44,8 @@ const App = () => (
     <Nav />
     <Route exact path="/" component={LoginPage}/>
     <Route exact path="/login" component={LoginPage} />
-    <Route exact path="/signup" component={SignupBox} />
-    <Route exact path="/createroom" component={CreateRoomPage} />
+    <Route exact path="/signup" component={Profilepage} />
+    <Route exact path="/createroom" component={CreateroomPage} />
   </div>
 </Router>
 

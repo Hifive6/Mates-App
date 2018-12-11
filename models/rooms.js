@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schem;
 //const passportLocalMongoose = require("passport-local-mongoose");
 
-roomSchema = mongoose.Schema ({
+const roomSchema = mongoose.Schema ({
     nameOfRoom: {
         type: String,
         require: true,

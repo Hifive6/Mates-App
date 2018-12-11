@@ -2,76 +2,86 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema
 //const passportLocalMongoose = require("passport-local-mongoose")
 
-profileSchema =  mongoose.Schema ({
+const profileSchema = new Schema ({
+    
     email: {
         type: String,
+        unique: true,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
     },
     password: { 
                 type: String, 
+                unique: true,
                 required: true,
                 validate: [
                     function(input){
-                        return input.length >= 10;
+                        return input.length >= 6;
                     }
                 ]
             },
     firstName: {
             type: String,
             required: true,
-            validate: [
-                function(input){
-                    return input.length >= 10;
-                }
-            ],
+            unique: true,
+            // // validate: [
+            // //     function(input){
+            // //         return input.length >= 10;
+            // //     }
+            // ],
     },
     lastName: {
             type: String,
-            required: true,
-            validate: [
-                function(input){
-                    return input.length >= 10;
-                }
-            ],
+            unique: true,
+            // required: true,
+            // validate: [
+            //     function(input){
+            //         return input.length >= 10;
+            //     }
+            // ],
     },
     emergencyContact:{
             type: String,
-            required: true,
-            validate: [
-                function(input){
-                    return input.length >= 10;
-                }
-            ],
+            unique: true,
+            // required: true,
+            // validate: [
+            //     function(input){
+            //         return input.length >= 10;
+            //     }
+            // ],
     },
     relationToTenants:{
             type: String,
-            require: true,
-            validate: [
-                function(input){
-                    return input.length >= 10;
-                }
-            ],
+            unique: true,
+            // require: true,
+            // validate: [
+            //     function(input){
+            //         return input.length >= 10;
+            //     }
+            // ],
     },
     phoneNumber: {
-        type: Number,
-        unique: true,
-        required: true,
-        validate: [
-                function(input){
-                    return input.length >= 10;
-                }
-            ],
-    },
-    email: {
         type: String,
-        match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
+        unique: true,
+        // required: true,
+        // validate: [
+        //         function(input){
+        //             return input.length >= 10;
+        //         }
+        //     ],
     },
     tenantsOfRooms: {
-                type: Array
+                type: Array,
+                unique: true
     },
     adminsOfRooms: {
-                type: Array
+                type: Array,
+                unique: true
             },
+    defaultRoom: {
+                type: String,
+                unique: true
+                //required: true,
+    }
 });
 
 const Profile = mongoose.model("Profile", profileSchema);
