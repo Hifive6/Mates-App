@@ -6,13 +6,13 @@ const profileSchema = new Schema ({
     
     email: {
         type: String,
-        unique: true,
+        //unique: true,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
     },
     password: { 
                 type: String, 
-                unique: true,
-                required: true,
+                //unique: true,
+                //required: true,
                 validate: [
                     function(input){
                         return input.length >= 6;
@@ -21,8 +21,8 @@ const profileSchema = new Schema ({
             },
     firstName: {
             type: String,
-            required: true,
-            unique: true,
+            //required: true,
+            //unique: true,
             // // validate: [
             // //     function(input){
             // //         return input.length >= 10;
@@ -31,7 +31,7 @@ const profileSchema = new Schema ({
     },
     lastName: {
             type: String,
-            unique: true,
+            //unique: true,
             // required: true,
             // validate: [
             //     function(input){
@@ -41,7 +41,7 @@ const profileSchema = new Schema ({
     },
     emergencyContact:{
             type: String,
-            unique: true,
+            // unique: true,
             // required: true,
             // validate: [
             //     function(input){
@@ -51,7 +51,7 @@ const profileSchema = new Schema ({
     },
     relationToTenants:{
             type: String,
-            unique: true,
+            //unique: true,
             // require: true,
             // validate: [
             //     function(input){
@@ -61,7 +61,7 @@ const profileSchema = new Schema ({
     },
     phoneNumber: {
         type: String,
-        unique: true,
+        //unique: true,
         // required: true,
         // validate: [
         //         function(input){
@@ -71,15 +71,15 @@ const profileSchema = new Schema ({
     },
     tenantsOfRooms: {
                 type: Array,
-                unique: true
+                //unique: true
     },
     adminsOfRooms: {
                 type: Array,
-                unique: true
+                //unique: true
             },
     defaultRoom: {
                 type: String,
-                unique: true
+                //unique: true
                 //required: true,
     }
 });

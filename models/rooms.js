@@ -5,7 +5,7 @@ const Schema = mongoose.Schem;
 const roomSchema = mongoose.Schema ({
     nameOfRoom: {
         type: String,
-        require: true,
+        //require: true,
         validate: [
             function(input){
                 return input.length >= 10;
@@ -14,7 +14,7 @@ const roomSchema = mongoose.Schema ({
     },
     nameOfAdmin: {
         type: mongoose.Schema.Types.ObjectId,
-        require: true,
+        //require: true,
         validate: [
             function(input){
                 return input.length >= 10;
@@ -23,7 +23,7 @@ const roomSchema = mongoose.Schema ({
     },
     messagesForRoom: {
         type: mongoose.Schema.Types.ObjectId,
-        require: true,
+        //require: true,
         validate: [
             function(input){
                 return input.length >= 10;

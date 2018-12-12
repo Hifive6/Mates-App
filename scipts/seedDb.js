@@ -3,7 +3,7 @@ const db = require("../models");
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongo://localhost/matesappDB",
+    process.env.MONGODB_URI || "mongodb://localhost/MatesApp1DB",
     {
         useMongoClient: true
     }
@@ -40,7 +40,6 @@ const profileSeed = [
 ];
 
 db.Profile
-    .remove({})
     .then(() => db.Profile.collection.insertMany(profileSeed))
     .then(data => {
         console.log(data.insertedIds.length + "records inserted!");

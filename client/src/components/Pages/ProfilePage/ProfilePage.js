@@ -29,7 +29,7 @@ export default class ProfilePage extends Component {
 
     handleInputChange = event => {
         const {name, value} = event.target;
-        console.log(event);
+        //console.log(event);
         console.log(this.state);
         this.setState({
             [name]: value

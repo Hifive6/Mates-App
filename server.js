@@ -17,7 +17,7 @@ app.use("/api", routes);
 // app.use(app.router);
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/AnotherMatesDB");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/MatesApp1DB");
 
 
 app.listen(PORT, function() {
