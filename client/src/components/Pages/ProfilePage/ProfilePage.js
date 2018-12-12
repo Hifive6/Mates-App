@@ -47,7 +47,7 @@ export default class ProfilePage extends Component {
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
                 emergencyContact: this.state.emergencyContact,
-                phononNumber: this.state.phoneNumber,
+                phoneNumber: this.state.phoneNumber,
                 relationToTenant: this.state.relationToTenant
             })
             .catch(err => console.log(err))

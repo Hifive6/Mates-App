@@ -2,6 +2,7 @@ const db = require("../models");
 
 module.exports = {
     createProfile: function (req, res){
+        console.log(req.body);
         db.Profile
         .create(req.body)
         .then(dbModel => res.json(dbMdodel))
