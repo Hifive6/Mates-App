@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 //const passportLocalMongoose = require("passport-local-mongoose")
 
-profileSchema =  mongoose.Schema ({
+const profileSchema =  new Schema ({
     email: {
         type: String,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
@@ -61,10 +61,6 @@ profileSchema =  mongoose.Schema ({
                     return input.length >= 10;
                 }
             ],
-    },
-    email: {
-        type: String,
-        match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
     },
     tenantsOfRooms: {
                 type: Array

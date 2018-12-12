@@ -41,11 +41,13 @@ import Createroompage from './components/dumb-components/createroompage/Createro
 const App = () => (
   <Router>
   <div>
-    <Nav />
+    {/* <Switch> */}
+    {/* <Nav /> */}
     <Route exact path="/" component={LoginPage}/>
     <Route exact path="/login" component={LoginPage} />
-    <Route exact path="/signup" component={SignupBox} />
-    <Route exact path="/createroom" component={CreateRoomPage} />
+    <Route exact path="/api/profile" component={ProfilePage} />
+    <Route exact path="/api/rooms" component={CreateRoomPage} />
+    {/* </Switch> */}
   </div>
 </Router>
 

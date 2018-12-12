@@ -20,7 +20,7 @@ module.exports = {
 
      createRoom: function (req, res){
          db.Room
-         .create(req.bodoy)
+         .create(req.body)
          .then(dbModel => res.json(dbMdoel))
          .catch(err => res.status(422).json(err));
      },
