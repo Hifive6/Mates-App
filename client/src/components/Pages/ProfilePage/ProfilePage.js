@@ -29,12 +29,16 @@ export default class ProfilePage extends Component {
 
     handleInputChange = event => {
         const {name, value} = event.target;
+        //console.log(event);
+        console.log(this.state);
         this.setState({
             [name]: value
         })
     }
 
     handleFormSubmit = event => {
+        console.log(event);
+        
         event.preventDefault();
         if (this.state.email && this.state.password && this.state.firstName){
             API.saveProfile({
@@ -43,7 +47,7 @@ export default class ProfilePage extends Component {
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
                 emergencyContact: this.state.emergencyContact,
-                phononNumber: this.state.phoneNumber,
+                phoneNumber: this.state.phoneNumber,
                 relationToTenant: this.state.relationToTenant
             })
             .catch(err => console.log(err))
@@ -68,6 +72,7 @@ export default class ProfilePage extends Component {
                     <div className="form-row ">
                             <div className="form-group col-md-6">
                                 <EmailInput 
+                                name="email"
                                 value={this.state.email}
                                 onChange={this.handleInputChange}
                                 />
@@ -76,6 +81,7 @@ export default class ProfilePage extends Component {
 
 
                                     <PasswordInput 
+                                    name="password"
                                     value={this.state.password}
                                     onChange={this.handleInputChange}/>
 
@@ -86,6 +92,7 @@ export default class ProfilePage extends Component {
                         <div className="form-row">
                             <div className="form-group col-md-4">
                                 <FirstNameInput
+                                name="firstName"
                                 value={this.state.firstName}
                                 onChange={this.handleInputChange} />
                                 </div>
@@ -93,6 +100,7 @@ export default class ProfilePage extends Component {
 
 
                                     <LastNameInput 
+                                    name="lastName"
                                     value={this.state.lastName}
                                     onChange={this.handleInputChange}/>
 
@@ -111,6 +119,7 @@ export default class ProfilePage extends Component {
 
                                 <EmergencyContactHeader />
                                 <EmergencyContactNameImput
+                                name="emergencyContact"
                                 value={this.state.emergencyContact}
                                 onChange={this.handleInputChange} 
                                 />
@@ -120,6 +129,7 @@ export default class ProfilePage extends Component {
 
 
                                 <PhoneNumberInput 
+                                name="phoneNumber"
                                 value={this.state.phoneNumber}
                                 onChange={this.handleInputChange}
                                 />
@@ -129,6 +139,7 @@ export default class ProfilePage extends Component {
                             <div className="form-group col-md-3">
 
                                 <RelationInput
+                                name="relationToTenant"
                                 value={this.state.relationToTenant}
                                 onChange={this.handleInputChange}
                                 />
