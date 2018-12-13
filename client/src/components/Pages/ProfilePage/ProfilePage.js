@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom'
 import EmergencyContactHeader from '../../dumb-components/ProfileForm/EmergencyContactHeader'
 import EmergencyContactNameImput from '../../dumb-components/ProfileForm/EmergencyContactNameInput'
 import FirstNameInput from '../../dumb-components/ProfileForm/FirstNameInput'
@@ -150,11 +150,11 @@ export default class ProfilePage extends Component {
                             </div>
                         </div>
 
-
-                        <ProfilePageButton
-                        onClick = {this.handleFormSubmit}
-                        />
-
+                            <Link to="/createroom">
+                                <ProfilePageButton
+                                    onClick={this.handleFormSubmit}
+                                />
+                            </Link>
 
                     </form>
                 </div>

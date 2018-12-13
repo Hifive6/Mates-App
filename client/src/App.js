@@ -14,6 +14,7 @@ import CreateroomPage from './components/dumb-components/createroompage/Createro
 import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
 import Profilepage from './components/Pages/ProfilePage/ProfilePage'
 
+
 import {
   
   Collapse,
@@ -44,9 +45,10 @@ const App = () => (
     {/* <Switch> */}
     {/* <Nav /> */}
     <Route exact path="/" component={LoginPage}/>
-    <Route exact path="/login" component={LoginPage} />
-    <Route exact path="/signup" component={Profilepage} />
-    <Route exact path="/createroom" component={CreateroomPage} />
+    {/* <Route exact path="/api/profil" component={LoginPage} /> */}
+    <Route exact path="/api/profiles/profile" component={Profilepage} />
+    <Route exact path="/api/rooms/room" component={CreateroomPage} />
+    <Route exact path={"/api/rooms/room:id"}  component={MessageBoard}/> 
   </div>
 </Router>
 
