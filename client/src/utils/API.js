@@ -9,16 +9,16 @@ export default {
 
   //Gets room with a specific id...
   getRoom: function(id) {
-      return axios.get("/api/rooms" + id);
+      return axios.get("/api/rooms/room" + id);
   },
   // Get all rooms....so user can join a room...
   getRooms: function() {
-      return axios.get("/api/rooms");
+      return axios.get("/api/rooms/room");
   },
 
   //Saves a room to the database
   saveRoom: function(rooms) {
-    return axios.post("/api/rooms", rooms )
+    return axios.post("/api/rooms/room", rooms )
   },
   
   // Saves a profile to the database
