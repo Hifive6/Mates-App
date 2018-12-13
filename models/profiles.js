@@ -11,7 +11,7 @@ const profileSchema = new Schema ({
     },
     password: { 
                 type: String, 
-                //unique: true,
+                unique: true,
                 //required: true,
                 validate: [
                     function(input){
@@ -49,7 +49,7 @@ const profileSchema = new Schema ({
             //     }
             // ],
     },
-    relationToTenants:{
+    relationToTenant:{
             type: String,
             //unique: true,
             // require: true,
