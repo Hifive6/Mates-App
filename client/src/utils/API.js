@@ -1,9 +1,10 @@
 import axios from "axios";
+const baseUrl = "http://localhost:3001";
 
 export default {
   // Gets user profile...
   getProfile: function(id) {
-    return axios.get("/api/profile" + id);
+    return axios.get("/api/profiles/profile" + id);
   },
 
   //Gets room with a specific id...
@@ -22,6 +23,6 @@ export default {
   
   // Saves a profile to the database
   saveProfile: function(userProfiles) {
-    return axios.post("/api/profile", userProfiles);
+    return axios.post(`${baseUrl}/api/profiles/profile`, userProfiles);
   }
 };

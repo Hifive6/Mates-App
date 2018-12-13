@@ -6,7 +6,7 @@ export default class LastNameInput extends Component {
       <div>
        
             <label for="inputPassword4">Last Name</label>
-            <input type="text" className="form-control" id="inputPassword4" placeholder="Last Name"></input>
+            <input type="text" className="form-control" id="inputPassword4" placeholder="Last Name"{...this.props}></input>
        
         
       </div>

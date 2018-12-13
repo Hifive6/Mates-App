@@ -1,22 +1,22 @@
 const router = require("express").Router();
-const profileController = require("../../controllers/profileController")
+const profileController = require("../../Controllers/profileController")
 
 
-router.route("/")
- .post(profileController.createProfile)
- .get(profileController.findAllProfiles);
- 
+router.route("/profile")
+    .post(profileController.createProfile)
+    .get(profileController.findAllProfiles);
 
- router.route("/:id")
+
+router.route("/:id")
     .get(profileController.findById)
     .put(profileController.updateProfile)
 
-    module.exports = router;
+module.exports = router;
 // var path = require("path");
 
 
 // module.exports = function(app) {
- 
+
 
 //   app.get("/login", function(req, res) {
 //     res.sendFile(path.join(__dirname, "../public/login.html"));

@@ -10,9 +10,9 @@ import SignupBox from './components/dumb-components/signupbox/signupbox'
 import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 
-import CreateRoomPage from './components/dumb-components/createroompage/CreateroomPage'
+import CreateroomPage from './components/dumb-components/createroompage/CreateroomPage'
 import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
-
+import Profilepage from './components/Pages/ProfilePage/ProfilePage'
 
 import {
   
@@ -32,7 +32,7 @@ import {
 
 
 import ProfilePage from './components/Pages/ProfilePage/ProfilePage';
-import Createroompage from './components/dumb-components/createroompage/CreateroomPage';
+//import Createroompage from './components/dumb-components/CreateRoomPage/CreateroomPage';
 
 
 
@@ -45,9 +45,8 @@ const App = () => (
     {/* <Nav /> */}
     <Route exact path="/" component={LoginPage}/>
     <Route exact path="/login" component={LoginPage} />
-    <Route exact path="/api/profile" component={ProfilePage} />
-    <Route exact path="/api/rooms" component={CreateRoomPage} />
-    {/* </Switch> */}
+    <Route exact path="/signup" component={Profilepage} />
+    <Route exact path="/createroom" component={CreateroomPage} />
   </div>
 </Router>
 
