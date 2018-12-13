@@ -23,8 +23,9 @@ export default class ProfilePage extends Component {
         firstName: "",
         lastName: "",
         emergencyContact:"",
-        phoneNumber: "",
         relationToTenant: "",
+        phoneNumber: "",
+        
     };
 
     handleInputChange = event => {
@@ -43,12 +44,13 @@ export default class ProfilePage extends Component {
         if (this.state.email && this.state.password && this.state.firstName){
             API.saveProfile({
                 email: this.state.email,
-                password: this.state.email,
+                password: this.state.password,
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
                 emergencyContact: this.state.emergencyContact,
-                phoneNumber: this.state.phoneNumber,
-                relationToTenant: this.state.relationToTenant
+                relationToTenant: this.state.relationToTenant,
+                phoneNumber: this.state.phoneNumber
+                
             })
             .catch(err => console.log(err))
         }
@@ -128,9 +130,9 @@ export default class ProfilePage extends Component {
                             <div className="form-group col-md-3">
 
 
-                                <PhoneNumberInput 
-                                name="phoneNumber"
-                                value={this.state.phoneNumber}
+                               <RelationInput
+                                name="relationToTenant"
+                                value={this.state.relationToTenant}
                                 onChange={this.handleInputChange}
                                 />
 
@@ -138,9 +140,9 @@ export default class ProfilePage extends Component {
                             </div>
                             <div className="form-group col-md-3">
 
-                                <RelationInput
-                                name="relationToTenant"
-                                value={this.state.relationToTenant}
+                                 <PhoneNumberInput 
+                                name="phoneNumber"
+                                value={this.state.phoneNumber}
                                 onChange={this.handleInputChange}
                                 />
 
