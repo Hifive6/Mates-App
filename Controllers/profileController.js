@@ -5,7 +5,7 @@ module.exports = {
         console.log(req.body);
         db.Profile
         .create(req.body)
-        .then(dbModel => res.json(dbMdodel))
+        .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
 

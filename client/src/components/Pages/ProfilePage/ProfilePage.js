@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
+=======
+import {Link} from "react-router-dom"
+>>>>>>> 7ea1c6059cf0b9ce38bcb17aac4411d96faca8ba
 import EmergencyContactHeader from '../../dumb-components/ProfileForm/EmergencyContactHeader'
 import EmergencyContactNameImput from '../../dumb-components/ProfileForm/EmergencyContactNameInput'
 import FirstNameInput from '../../dumb-components/ProfileForm/FirstNameInput'
@@ -10,6 +14,7 @@ import RelationInput from '../../dumb-components/ProfileForm/RelationInput'
 import EmailInput from '../../dumb-components/ProfileForm/EmailInput'
 import PasswordInput from '../../dumb-components/ProfileForm/PasswordInput'
 import API from "../../../utils/API";
+
 
 
 import '../../Pages/ProfilePage/ProfilePage.css'
@@ -37,24 +42,24 @@ export default class ProfilePage extends Component {
         })
     }
 
-    handleFormSubmit = event => {
-        console.log(event);
-
-        event.preventDefault();
-        if (this.state.email && this.state.password && this.state.firstName) {
-            API.saveProfile({
-                email: this.state.email,
-                password: this.state.password,
-                firstName: this.state.firstName,
-                lastName: this.state.lastName,
-                emergencyContact: this.state.emergencyContact,
-                relationToTenant: this.state.relationToTenant,
-                phoneNumber: this.state.phoneNumber
-
-            })
-                .catch(err => console.log(err))
-        }
-    }
+    // handleFormSubmit = event => {
+    //     console.log(event);
+        
+    //     event.preventDefault();
+    //     if (this.state.email && this.state.password && this.state.firstName){
+    //         API.saveProfile({
+    //             email: this.state.email,
+    //             password: this.state.password,
+    //             firstName: this.state.firstName,
+    //             lastName: this.state.lastName,
+    //             emergencyContact: this.state.emergencyContact,
+    //             relationToTenant: this.state.relationToTenant,
+    //             phoneNumber: this.state.phoneNumber
+                
+    //         })
+    //         .catch(err => console.log(err))
+    //     }
+    // }
     render() {
 
 
@@ -147,6 +152,7 @@ export default class ProfilePage extends Component {
                                     />
 
 
+<<<<<<< HEAD
                                 </div>
                             </div>
 
@@ -158,6 +164,13 @@ export default class ProfilePage extends Component {
 
                         </form>
                     </div>
+=======
+                        <Link to = {"/createroom"} >
+                        <ProfilePageButton
+                        // onClick = {this.handleFormSubmit}
+                         />
+                        </Link>
+>>>>>>> 7ea1c6059cf0b9ce38bcb17aac4411d96faca8ba
 
                 </div>
             </div>

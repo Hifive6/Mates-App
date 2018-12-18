@@ -6,7 +6,7 @@ import PasswordInputField from '../../dumb-components/loginbox/PasswordInputFiel
 import LoginButton from '../../dumb-components/loginbox/LoginButton'
 import RememberMeCheckBox from '../../dumb-components/loginbox/RememberMeCheckBox'
 import SignUpButton from '../../dumb-components/loginbox/SignUpButton';
-import Createroompage from "../../dumb-components/createroompage/CreateroomPage"
+import Createroompage from "../CreateroomPage"
 import '../LoginPage/LoginPage.css'
 import ProfilePage from '../ProfilePage/ProfilePage';
 import API from '../../../utils/API'
@@ -32,6 +32,7 @@ export default class LoginPage extends Component {
 
 
 
+<<<<<<< HEAD
     };
 
 
@@ -91,6 +92,16 @@ export default class LoginPage extends Component {
                 <div className="login-background">
 
                     <div id="login" className="container shadow-lg p-3 mb-5 bg-white rounded">
+=======
+  render() {
+    return (
+      
+        <div>
+<div className="login-background">
+<div className="container">
+    <h1  id="titleLanding">M A T E S</h1>
+</div>
+>>>>>>> 7ea1c6059cf0b9ce38bcb17aac4411d96faca8ba
 
                         <form>
 
@@ -105,6 +116,11 @@ export default class LoginPage extends Component {
                             <RememberMeCheckBox />
 
 
+<<<<<<< HEAD
+=======
+
+    <div id="login" style={{marginTop: '100px'}} className="container shadow-lg p-3 mb-5 bg-white rounded">
+>>>>>>> 7ea1c6059cf0b9ce38bcb17aac4411d96faca8ba
 
                             <div className="row">
                                 <Link to={{ pathname: this.state.chosenlink }}>
