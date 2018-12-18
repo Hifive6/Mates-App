@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const mongoose = require("mongoose");
 const routes = require("./routes/api");
-const PORT = process.env.PORT || 3001; 
+const PORT = process.env.PORT || 3002; 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

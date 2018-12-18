@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 //const passportLocalMongoose = require("passport-local-mongoose")
 
-const profileSchema = new Schema ({
+const profileSchema = new Schema({
     
     email: {
         type: String,
@@ -78,7 +78,7 @@ const profileSchema = new Schema ({
                 //unique: true
             },
     defaultRoom: {
-                type: String,
+                type: Array,
                 //unique: true
                 //required: true,
     }
