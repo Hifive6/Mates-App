@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../loginbox/login.css'
+//import '../loginbox/login.css'
 
 
 export default class LoginBox extends Component {

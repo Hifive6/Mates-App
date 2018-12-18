@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from "react-router-dom"
 import EmergencyContactHeader from '../../dumb-components/ProfileForm/EmergencyContactHeader'
 import EmergencyContactNameImput from '../../dumb-components/ProfileForm/EmergencyContactNameInput'
 import FirstNameInput from '../../dumb-components/ProfileForm/FirstNameInput'
@@ -10,6 +10,7 @@ import RelationInput from '../../dumb-components/ProfileForm/RelationInput'
 import EmailInput from '../../dumb-components/ProfileForm/EmailInput'
 import PasswordInput from '../../dumb-components/ProfileForm/PasswordInput'
 import API from "../../../utils/API";
+
 
 
 import '../../Pages/ProfilePage/ProfilePage.css'
@@ -37,24 +38,24 @@ export default class ProfilePage extends Component {
         })
     }
 
-    handleFormSubmit = event => {
-        console.log(event);
+    // handleFormSubmit = event => {
+    //     console.log(event);
         
-        event.preventDefault();
-        if (this.state.email && this.state.password && this.state.firstName){
-            API.saveProfile({
-                email: this.state.email,
-                password: this.state.password,
-                firstName: this.state.firstName,
-                lastName: this.state.lastName,
-                emergencyContact: this.state.emergencyContact,
-                relationToTenant: this.state.relationToTenant,
-                phoneNumber: this.state.phoneNumber
+    //     event.preventDefault();
+    //     if (this.state.email && this.state.password && this.state.firstName){
+    //         API.saveProfile({
+    //             email: this.state.email,
+    //             password: this.state.password,
+    //             firstName: this.state.firstName,
+    //             lastName: this.state.lastName,
+    //             emergencyContact: this.state.emergencyContact,
+    //             relationToTenant: this.state.relationToTenant,
+    //             phoneNumber: this.state.phoneNumber
                 
-            })
-            .catch(err => console.log(err))
-        }
-    }
+    //         })
+    //         .catch(err => console.log(err))
+    //     }
+    // }
     render() {
 
 
@@ -150,11 +151,11 @@ export default class ProfilePage extends Component {
                             </div>
                         </div>
 
-
+                        <Link to = {"/createroom"} >
                         <ProfilePageButton
-                        onClick = {this.handleFormSubmit}
-                        />
-
+                        // onClick = {this.handleFormSubmit}
+                         />
+                        </Link>
 
                     </form>
                 </div>

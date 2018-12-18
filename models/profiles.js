@@ -78,7 +78,7 @@ const profileSchema = new Schema ({
                 //unique: true
             },
     defaultRoom: {
-                type: String,
+                type: Array,
                 //unique: true
                 //required: true,
     }
