@@ -9,10 +9,11 @@ import SignupBox from './components/dumb-components/signupbox/signupbox'
 
 import './App.css';
 import LoginPage from './components/Pages/LoginPage/LoginPage'
-
-import CreateroomPage from './components/dumb-components/createroompage/CreateroomPage'
+import DashBoard from './components/Pages/DashBoard/Dashboard'
+import CreateroomPage from './components/Pages/CreateroomPage'
 import MessageBoard from '../src/components/dumb-components/Messageboard/MessageBoardPage'
 import Profilepage from './components/Pages/ProfilePage/ProfilePage'
+import BillsPage from "./components/Pages/BillsPage"
 
 import {
   
@@ -46,6 +47,8 @@ const App = () => (
     <Route exact path="/login" component={LoginPage} />
     <Route exact path="/signup" component={Profilepage} />
     <Route exact path="/createroom" component={CreateroomPage} />
+    <Route exact path="/dashboard" component={DashBoard} />
+    <Route exact path="/bills" component={BillsPage} />
   </div>
 </Router>
 

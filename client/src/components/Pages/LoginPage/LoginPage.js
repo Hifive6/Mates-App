@@ -5,7 +5,7 @@ import PasswordInputField from '../../dumb-components/loginbox/PasswordInputFiel
 import LoginButton from '../../dumb-components/loginbox/LoginButton'
 import RememberMeCheckBox from '../../dumb-components/loginbox/RememberMeCheckBox'
 import SignUpButton from '../../dumb-components/loginbox/SignUpButton';
-import Createroompage from "../../dumb-components/createroompage/CreateroomPage"
+import Createroompage from "../CreateroomPage"
 import '../LoginPage/LoginPage.css'
 
 export default class LoginPage extends Component {
@@ -39,16 +39,16 @@ export default class LoginPage extends Component {
     return (
       
         <div>
-
+<div className="login-background">
 <div className="container">
-    <h1 id="titleLanding">M A T E S</h1>
+    <h1  id="titleLanding">M A T E S</h1>
 </div>
 
 
 
-<div className="login-background">
 
-    <div id="login" className="container shadow-lg p-3 mb-5 bg-white rounded">
+
+    <div id="login" style={{marginTop: '100px'}} className="container shadow-lg p-3 mb-5 bg-white rounded">
 
         <form>
 

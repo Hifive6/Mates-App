@@ -25,15 +25,24 @@ module.exports = {
          .catch(err => res.status(422).json(err));
      },
 
-    updateRoom: function (req, res) {
-        var newTenant = db.Profile.find({ _id: req.params.id }, req.body)
-        db.Room.update(
-            { _id: roomId },
-            { $addToSet: { Tenants: newTenant }}
+     updateProfile: function (req, res) {
+        var newRoom = db.Room.find({ _id: req.params.id }, req.body)
+        db.Profile.update(
+            { _id: ProfileId },
+            { $addToSet: { tenantsOfRooms: newRoom }}
         )
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
-    }
+    },
+
+    updateMessages: function(req, res){
+              db.Room
+              .findOneAndUpdate({ _id: req.params.id }, req.body)
+              .then(dbModel => res.json(dbModel))
+              .catch(err => res.status(422).json(err));
+          }
+          
+    
 
 
 }

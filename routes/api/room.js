@@ -10,10 +10,10 @@ router.route("/")
 
 
 //Matches with /api/rooms/:id
-router.route("/id:")
+router.route("room/rooms/id:")
 .get(roomController.findRoom)
 .post(roomController.createRoom)
-.put(roomController.updateRoom)
+//.put(roomController.updateRoom)
 
 
 
@@ -21,6 +21,9 @@ router.route("/id:")
 router.route("/profile/id:")
   .get(profileController.findById)
   .post(profileController.createProfile)
+
+// router.route("room/rooms/:id")
+//    .post(roomController.updateRoom)
   
 
 module.exports = router;

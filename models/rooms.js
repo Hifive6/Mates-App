@@ -1,34 +1,34 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schem;
+const Schema = mongoose.Schema;
 //const passportLocalMongoose = require("passport-local-mongoose");
 
-const roomSchema = mongoose.Schema ({
+const roomSchema = new Schema({
     nameOfRoom: {
         type: String,
         //require: true,
-        validate: [
-            function(input){
-                return input.length >= 10;
-            }
-        ]
+        // validate: [
+        //     function(input){
+        //         return input.length >= 10;
+        //     }
+        // ]
     },
     nameOfAdmin: {
         type: mongoose.Schema.Types.ObjectId,
         //require: true,
-        validate: [
-            function(input){
-                return input.length >= 10;
-            }
-        ]
+        // validate: [
+        //     function(input){
+        //         return input.length >= 10;
+        //     }
+        // ]
     },
     messagesForRoom: {
         type: mongoose.Schema.Types.ObjectId,
         //require: true,
-        validate: [
-            function(input){
-                return input.length >= 10;
-            }
-        ]
+        // validate: [
+        //     function(input){
+        //         return input.length >= 10;
+        //     }
+        // ]
     },
     tenants: {
         type: Array,
